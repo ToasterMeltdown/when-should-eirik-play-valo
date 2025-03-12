@@ -13,12 +13,37 @@ body {
 	font-weight: 700;
 }
 
+
+
 img{
     position: fixed;
     width: 100%;
     top: 30%;
     transition: top 1s;
 }
+
+.countdown {
+    background: linear-gradient(to bottom, #ebf1f6 0%, #abd3ee 50%, #859ee2 51%, #d5ebfb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb', GradientType=0 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Saira', sans-serif;
+    font-weight: 700;
+    font-size: 3em; /* Adjust the size as needed */
+    text-align: center; /* Centers the text horizontally */
+    position: absolute;
+    top: 32%; /* Adjust the vertical position above the triangle */
+    width: 100%; /* Ensures the text spans across the entire screen width */
+    z-index: 5; /* Ensures it's above the triangle */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Adds some spacing between the letters */
+    text-shadow: 1px -1px 0 rgba(255,255,255,0.5), 
+                 3px 1px 3px rgba(216, 1, 216, 0.85), 
+                 -3px -2px 3px rgba(0,0,255,0.85), 
+                 1px -2px 0 rgba(255,255,255,0.8);
+}
+
 
 .wrapper {
     display: grid;
@@ -54,6 +79,10 @@ h1 {
     transition: font-size 1s;
     position: absolute;
     text-transform: uppercase;
+    -webkit-user-select: none; /* Prevent selection on WebKit browsers like Chrome and Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    user-select: none; /* Standard syntax for modern browsers */
 
     &:after {
         background: none;
@@ -93,6 +122,10 @@ h2 {
     font-family: 'Courgette', cursive;
     transition: font-size 1s;
     margin-top: 3.5em;
+    -webkit-user-select: none; /* Prevent selection on WebKit browsers like Chrome and Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    user-select: none; /* Standard syntax for modern browsers */
 }
 
 @media only screen and (min-width: 768px) {
