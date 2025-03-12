@@ -34,10 +34,28 @@ img {
   width: 100%; /* Ensures the text spans across the entire screen width */
   z-index: 5; /* Ensures it's above the triangle */
   text-transform: uppercase;
-  letter-spacing: 2px; /* Adds some spacing between the letters */
+  letter-spacing: 1px; /* Adds some spacing between the letters */
   text-shadow: 1px -1px 0 rgba(255, 255, 255, 0.5), 3px 1px 3px rgba(216, 1, 216, 0.85), -3px -2px 3px rgba(0, 0, 255, 0.85), 1px -2px 0 rgba(255, 255, 255, 0.8);
 }
 
+/* For medium screens (tablets, some laptops) */
+@media only screen and (max-width: 1220px) {
+  .countdown {
+    font-size: 2em; /* Make the text smaller on medium screens */
+  }
+}
+/* For small screens (phones) */
+@media only screen and (max-width: 808px) {
+  .countdown {
+    font-size: 1.5em; /* Further reduce text size for smaller screens */
+  }
+}
+/* For very small screens (small phones) */
+@media only screen and (max-width: 620px) {
+  .countdown {
+    font-size: 1em; /* Further reduce text size on tiny screens */
+  }
+}
 .wrapper {
   display: grid;
   place-items: center;
